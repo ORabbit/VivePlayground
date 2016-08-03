@@ -68,7 +68,7 @@ public class PickupParent : MonoBehaviour {
 		}
 	}
 
-	// Method to toss and object simply using the STEAMVR controller velocity variables
+	// Method to toss an object simply using the STEAMVR controller velocity variables
 	void tossObject(Rigidbody rigidBody) {
 		Transform origin = trackedObj.origin ? trackedObj.origin : trackedObj.transform.parent;
 		if (origin != null) { // Toss using world space vector conversions
